@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  // font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3 {
+  color: rgb(54, 54, 54);
+}
+
+h3,
+h4 {
+  font-weight: 400;
+  color: rgb(100, 100, 100);
+}
+
+body {
+  background-color: rgb(235, 235, 235);
+}
+
+.header {
+  text-align: center;
+  margin: 20px 20px;
+
+  .logo {
+    font-size: 48px;
+    font-weight: 700;
+  }
+}
+
+.hero {
+  text-align: center;
+  // margin: 50px;
+  border: 0;
+  border-bottom: 1px solid #0000001a;
+
+  .first-text {
+    margin: 50px 0px 10px 0px;
+  }
+  .second-text {
+    margin-bottom: 50px;
+  }
+  .third-text {
+    margin-bottom: 25px;
+  }
+}
+
+.container-wrapper {
+  padding: 0px 25px;
+  width: 90%;
+}
+
+.music-category-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+}
+
+.category-wrapper {
+  padding: 25px;
+  text-align: center;
+  border: 1px solid #ffc107;
+}
+
+.category-name {
+  font-size: 32px;
+  font-weight: 700;
+  padding: 0px 20px;
+  text-transform: uppercase;
+}
+
+.category-image-container {
+  width: 240px;
+  height: 250px;
+  margin: 5px auto;
+}
+
+.category-image {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+// .btn {
+//   padding: 10px 20px;
+//   border-color: #007bff;
+//   background-color: #007bff;
+//   border-radius: 8px;
+//   color: #ffffff;
+//   font-weight: 500;
+//   cursor: pointer;
+//   margin-bottom: 20px;
+//   transition: background-color 0.2s ease-in-out;
+//   &:hover {
+//     border-color: #0069d9;
+//     background-color: #0069d9;
+//   }
+// }
+
+.category-description {
+  padding: 10px;
+}
+
+.modal-content-wrapper {
+  overflow-y: auto;
+  height: 800px;
+}
+
+.modal-title {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.modal-style {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  right: 40px;
+  bottom: 40px;
+  background-color: #9187f5;
+  // background-image: -webkit-linear-gradient(316deg, #3bd2ae 0%, #36bac2 100%);
+  // background-image: linear-gradient(-226deg, #3bd2ae 0%, #36bac2 100%);
+}
+
+footer {
+  margin-top: 30px;
+  margin-bottom: 0px;
+  padding: 10px 5px;
+  text-align: center;
+  font-size: 10px;
+  background-color: #d4d0d0;
+}
+
+/* library overrides */
+
+.ReactModal__Overlay {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: all 200ms ease-in-out;
+}
+
+.ReactModal__Overlay--after-open {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ReactModal__Overlay--before-close {
+  opacity: 0;
+  transform: translateX(-100px);
+}
+
+.rbt-aux {
+  position: absolute;
+  bottom: 0px;
+  right: 5px;
+}
